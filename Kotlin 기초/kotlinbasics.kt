@@ -42,6 +42,37 @@ fun main(){
     var lasstCharInStr = myStr[myStr.length-1]
     var myLength = myStr.length
     print("First character $firstCharInStr and the length of myStr is ${myStr.length}") //스트링 템플릿 표현식 또는 스트링 인터폴레이션 개념입니다
+    
+        //Arithmetic operators (+, -, *, /, %)
+    var result = 5+3
+    var a = 5.0
+    var b = 3
+    var resultDouble : Double
+    resultDouble = a / b
+    //print(resultDouble)
 
+    //Comparison operators (==, !=, <, >, <=, >=)
+    val isEqual = 5==3
+    //println("isEqual is $isEqual")
+    //String interpolation
+    val isNotEqual = 5!=5
+    //println("isNotEqual is $isNotEqual")
+
+    //println("is-5less3 ${-5<3}")
+    //println("is-5LowerEqual3 ${5 <= 3}")
+    //println("is-5GreaterEqual3 ${5 >= 5}")
+
+    //Assignment operators (+=, -=, *=, /=, %=)
+    var myNum = 5
+    myNum += 3
+    myNum *= 4
+    println("myNum is $myNum")
+
+    //Increment & Decrement operators (++, --)
+    myNum++
+    println("myNum is $myNum")
+    println("myNum is ${myNum++}") //코드가 끝난 후에 증가
+    println("myNum is ${++myNum}")
+    println("myNum is ${--myNum}")
 
 }
