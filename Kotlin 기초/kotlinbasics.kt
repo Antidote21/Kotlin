@@ -35,5 +35,13 @@ fun main(){
     var lastCharInStr = myStr[myStr.length - 1] // 마지막 문자
 
     print("First character " + firstCharInStr)
+    
+    // Strings
+    val myStr = "Hello World"
+    var firstCharInStr = myStr[0]
+    var lasstCharInStr = myStr[myStr.length-1]
+    var myLength = myStr.length
+    print("First character $firstCharInStr and the length of myStr is ${myStr.length}") //스트링 템플릿 표현식 또는 스트링 인터폴레이션 개념입니다
+
 
 }
