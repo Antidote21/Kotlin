@@ -74,5 +74,82 @@ fun main(){
     println("myNum is ${myNum++}") //코드가 끝난 후에 증가
     println("myNum is ${++myNum}")
     println("myNum is ${--myNum}")
+    
+        var heightPerson1 = 170
+    var heightPerson2 = 189
+
+    if(heightPerson1 > heightPerson2){
+        println("use raw force")
+    }else if(heightPerson1==heightPerson2){
+        println("use your power technique 1337+")
+    }
+    else{
+        println("use technique")
+    }
+
+    val age = 17
+
+    if(age >= 30)
+        println("you're over 30")
+
+    if(age >= 21){
+        println("now you may drink in the US")
+    }else if(age>=18){
+        println("you may vote now")
+    }
+    else if(age>=16){
+        println("you may drive now")
+    }else {
+        println("you are too young")
+    }
+
+    when(age){
+        !in 0..20 -> println("now you may drink in the US")
+        in 18..20 -> println("you may vote now")
+        16, 17 -> println("you may drive now")
+        else -> println("you are too young")
+    }
+
+
+    var name = "Denis"
+
+    if(name == "Denis"){
+        println("welcome home Denis")
+    }else{
+        println("who are you?")
+    }
+    var isRaniny = true
+    if(isRaniny)
+        println("It's a rainy")
+    /*
+    var season = 3
+    when(season){
+        1 -> println("Spring")
+        2 -> println("Summer")
+        3 -> {
+            println("Fall")
+            println("Autumn")
+        }
+        4 -> println("Winter")
+        else -> println("Invalid Season")
+    }
+    */
+
+    var month = 3
+    when(month){
+        in 3..5 -> println("Spring")
+        in 6..8 -> println("Summer")
+        in 9..11 -> println("Fall")
+        12, 1, 2 -> println("Winter")
+        else -> println("Invalid Season")
+    }
+
+    var x : Any = "13.37f"
+    when(x){
+        is Int -> println("$x is Int")
+        !is Double -> println("$x is not Double")
+        is String -> println("$x is String")
+        else -> println("$x is none of the above")
+    }
 
 }
