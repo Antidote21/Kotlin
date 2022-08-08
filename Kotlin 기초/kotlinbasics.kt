@@ -151,5 +151,68 @@ fun main(){
         is String -> println("$x is String")
         else -> println("$x is none of the above")
     }
+    
+    var x = 100
+    while(x >= 0){
+        print("$x")
+        x -= 2
+    }
+    println("\nwhile loop is done")
+
+    x =15
+    do{
+        print("$x")
+        x++
+    }while(x <= 10)
+    println("\ndo while loop is done")
+
+    var feltTemp = "cold"
+    var roomTemp = 10
+    while(feltTemp == "cold"){
+        roomTemp++
+        if(roomTemp >= 20){
+            feltTemp = "comfy"
+            println("it's a comfy now")
+        }
+    }
+
+    for(num in 1..10){ // Same as - for(i in 1.until(10))
+        print("$num")
+    }
+
+    for(i in 1 until 10){ // Same as - for(i in 1.until(10))
+        print("$i ")
+    }
+
+    for(i in 10 downTo 1 step 2){ // Same as - for(i in 10.downTo(1).step(2))
+        print("$i ")
+    }
+
+    var k=0
+
+    while(k<=10000){
+        if(k==9001){
+            print("IT'S OVER 9000!!!")
+        }
+    }
+
+    var humidity = "humid"
+    var humidityLevel = 80
+    while (humidity == "humid"){
+        humidityLevel-=5
+        println("humidity decreased")
+        if(humidityLevel < 60){
+            humidity = "comfy"
+            println("it's comfy now")
+        }
+    }
+
+    for(i in 1 until 20){
+        print("$i ")
+        if(i/2 == 5){
+            continue  // break //특정 조건이 맞을 때 for 루프에서 나오기 위해 키워드 break를 사용한다.
+        }          // 대체로 조건을 통제할 수 없거나 랜덤인 이유 등으로 사용한다.
+    }
+    print("Done with the loop")
 
 }
